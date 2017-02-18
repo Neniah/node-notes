@@ -1,0 +1,19 @@
+{
+  "name": "hola",
+  "version": "0.0.1",
+  "description": "Hola mundo con Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.1",
+    "jade": "^1.11.0"
+  }
+}
