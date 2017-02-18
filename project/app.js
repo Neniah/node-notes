@@ -11,7 +11,7 @@ var userSchemaJSON = {
   password:String
 };
 
-var user_schema = new Schema(userSchemaJSON);
+
 
 var User = mongoose.model("User", user_schema);
 
