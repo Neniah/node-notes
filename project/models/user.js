@@ -23,6 +23,12 @@ var user_schema = new Schema({
   Array
 */
 
+user_schema.virtual("password_confirmation").get(function(){
+  return this.pass_cofirm;
+}).set(function(password){
+  this.pass_confirm = password;
+});
+
 var User = mongoose.model("User", user_schema);
 
 module.exports.User = User;
