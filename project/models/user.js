@@ -12,16 +12,6 @@ var user_schema = new Schema({
   date_of_birth: Date
 });
 
-/*
-  String
-  Number
-  date
-  Buffer
-  Boolean
-  Mixed
-  Objectid
-  Array
-*/
 
 user_schema.virtual("password_confirmation").get(function(){
   return this.pass_cofirm;
