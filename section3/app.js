@@ -1,8 +1,15 @@
-console.log('Startig app');
+console.log('Startig app.js');
 
 const fs = require('fs');
 const os = require('os');
+const notes = require('./notes.js');
 
-var user = os.userInfo();
+var res = notes.addNote();
+console.log(res);
 
-fs.appendFile('greetings.txt', `Hello ${user.username}`);
+var sum = notes.add(3,5);
+console.log('Result:' , sum);
+
+//var user = os.userInfo();
+
+//fs.appendFile('greetings.txt', `\nHello ${user.username}! You are ${notes.age}`);
